@@ -1,87 +1,165 @@
 
   header {
+    /* Some comment */
     background:#ffffff;
     width: 100%;
+    margin-bottom:40px;
     overflow: auto;
-    clear: both;
     height: 75px;
-    border-bottom:#d1d0d0;
+    border-bottom:2px solid #d1d0d0;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 18px;
-    margin-bottom:50px;
   }
 
-  a{
-      text-decoration:none;
-      color:#777777;
-  }
+  footer {
+    position: fixed;
+    margin-top:50px;
+    left: 0px;
+    bottom: 0px;
+    border-top: 8px solid #4aaaa5;
+    height: 35px;
+    width: 100%;
+    padding: 20px;
+    color: #ffffff;
+    background-color: #666666;
+    text-align: center;
+}
 
   h1{
       position: absolute;
       top: 0;
       margin: auto;
-      margin-left:175px;
+      margin-left:120px;
       color:#ffffff;
       font-family: Georgia, 'Times New Roman', Times, serif;
       background-color:#4aaaa5;
+      border-bottom: 2px solid #d1d0d0;
       height:55px;
       padding-top: 20px;
       font-size:24px; 
       float: left;  
   }
 
+  h2{
+    color:#4aaaa5;
+    padding-left:45px;
+  }
+
   #navbtns {
     float: right;
     width: 30%;
+    height:10px;
+    margin:0;
     font-size: 16px;
     background: #ffffff;
-    padding-top: 25px;
-    padding-right:75px;
     border:none;
-    background:transparent;
+    background:#fffffff;
+    padding-top:25px;
   }
 
-  #container {
+  a{
+    text-decoration:none;
+    color:#777777;
+}
+
+.a:hover{
+  
+}
+
+  .container {
     max-width: 960px;
     box-sizing: border-box;
-    overflow: auto;
-    margin: 0 auto;
+    overflow:auto;
+    margin-left:120px;
     height: auto;
-    background-color: #ffffff;
-    padding: 50px;
     border: 1px solid #d1d0d0;
+    background-color: #ffffff;
     border-radius: 4px;
-    margin-bottom: 30px;
 }
 
   body {
     padding: 0;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
     font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 150%;
-    color: black;
+    width:100%;
+    margin:0;
     background:#ffffff;
     background-image: url(../images/triangle-mosaic.png);
   }
 
+  #selfie{
+    float:left;
+    height:auto;
+    border-radius:10px;
+    margin: 10px;
+    padding-bottom:20px;
+  }
+
+  p{
+    font-size:16px;
+    text-align: left;
+    padding-top:2px;
+  }
+
   .content {
     clear: both;
+    display: block;
     width: 90%;
     height: auto;
-    margin: auto;
+    margin: 0 auto;
 }
 
-  footer {
-    position: fixed;
-    width: 100%;
-    color: #ffffff;
-    background-color: #666666;
-    padding: 20px;
-    left: 0px;
-    bottom: 0px;
-    border-top: 8px solid #4aaaa5;
-    border-color: #4aaaa5;
-    height: 50px;
-    text-align: center;
+.box-set {
+  position: relative;
+  height: auto;
+  width:960px;
+  background: transparent;
 }
+
+  .box {
+    /* Absolute Position */
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: #4aaaa5;
+    border: 2px solid #dddddd;
+  }
+  .box-1 {
+    float:left;
+    display:inline-block;
+    margin:auto;
+  }
+
+input[type=text] {
+  text-align: left;
+  width: 95%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #4aaaa5;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  box-shadow: none;
+}
+
+form {
+  text-align: left;
+  width:95%;
+  padding:15px;
+}
+
+textarea {
+  text-align: left;
+  width: 93%;
+  padding: 12px 20px;
+  margin: 12px 0;
+  height: 200px;
+}
+
