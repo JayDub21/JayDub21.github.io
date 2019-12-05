@@ -1,0 +1,87 @@
+
+  header {
+    background:#ffffff;
+    width: 100%;
+    overflow: auto;
+    clear: both;
+    height: 75px;
+    border-bottom:#d1d0d0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    margin-bottom:50px;
+  }
+
+  a{
+      text-decoration:none;
+      color:#777777;
+  }
+
+  h1{
+      position: absolute;
+      top: 0;
+      margin: auto;
+      margin-left:175px;
+      color:#ffffff;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color:#4aaaa5;
+      height:55px;
+      padding-top: 20px;
+      font-size:24px; 
+      float: left;  
+  }
+
+  #navbtns {
+    float: right;
+    width: 30%;
+    font-size: 16px;
+    background: #ffffff;
+    padding-top: 25px;
+    padding-right:75px;
+    border:none;
+    background:transparent;
+  }
+
+  #container {
+    max-width: 960px;
+    box-sizing: border-box;
+    overflow: auto;
+    margin: 0 auto;
+    height: auto;
+    background-color: #ffffff;
+    padding: 50px;
+    border: 1px solid #d1d0d0;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: black;
+    background:#ffffff;
+    background-image: url(../images/triangle-mosaic.png);
+  }
+
+  .content {
+    clear: both;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+  footer {
+    position: fixed;
+    width: 100%;
+    color: #ffffff;
+    background-color: #666666;
+    padding: 20px;
+    left: 0px;
+    bottom: 0px;
+    border-top: 8px solid #4aaaa5;
+    border-color: #4aaaa5;
+    height: 50px;
+    text-align: center;
+}
