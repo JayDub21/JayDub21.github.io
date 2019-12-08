@@ -1,171 +1,39 @@
+body{
+    
+    background-image: url(../images/embossed-diamond.png);
+}
 
-  header {
+header{
+    border-bottom: 2px solid #d1d0d0;
+}
+
+.nav{
     background:#ffffff;
-    width: 100%;
-    margin-bottom:40px;
-    overflow: auto;
-    height: 75px;
-    border-bottom:2px solid #d1d0d0;
+}
+
+.nav a{
     font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 18px;
-  }
-
-  footer {
-    position: fixed;
-    margin-top:50px;
-    left: 0px;
-    bottom: 0px;
-    border-top: 8px solid #4aaaa5;
-    height: 35px;
-    width: 100%;
-    padding: 20px;
-    color: #ffffff;
-    background-color: #666666;
-    text-align: center;
+    font-size:24px;
+    color:#666666;
 }
 
-  h1{
-      position: absolute;
-      top: 0;
-      margin: auto;
-      margin-left:120px;
-      color:#ffffff;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      background-color:#4aaaa5;
-      border-bottom: 2px solid #d1d0d0;
-      height:55px;
-      padding-top: 20px;
-      font-size:24px; 
-      float: left;  
-  }
-
-  h2{
-    color:#4aaaa5;
-    padding-left:45px;
-  }
-
-  h4 {
-    color: #ffffff;
-    font-size:22px;
-    padding-bottom: 40px;
+.navbar-brand{
+    color:#ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:#4aaaa5;
+    height:55px;
+    font-size:24px; 
+    padding-top: 10px;
 }
 
-.portfolio {
-  display: inline-flex;
-  position: relative;
-  object-fit: cover;
-  width: 200px;
-  height: 200px;
-  margin:20px;
-}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
 
-.texthvr {
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 5px;
-  left: 0px;
-  text-align:center;
-  width: 100%;
-  height:60px;
-  background-color: #4aaaa5;
-  opacity: 0.7;
-}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
 
-  #navbtns {
-    float: right;
-    width: 30%;
-    height:10px;
-    margin:0;
-    font-size: 16px;
-    background: #ffffff;
-    border:none;
-    background:#fffffff;
-    padding-top:25px;
-  }
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
 
-  a{
-    text-decoration:none;
-    color:#777777;
-}
-
-  .container {
-    max-width: 960px;
-    box-sizing: border-box;
-    overflow:auto;
-    margin-left:120px;
-    height: auto;
-    border: 1px solid #d1d0d0;
-    background-color: #ffffff;
-    border-radius: 4px
-}
-
-  body {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 22px;
-    line-height: 150%;
-    width:100%;
-    margin:0;
-    background:#ffffff;
-    background-image: url(../images/triangle-mosaic.png);
-  }
-
-  #selfie{
-    float:left;
-    height:auto;
-    border-radius:10px;
-    margin: 10px;
-    padding-bottom:20px;
-  }
-
-  p{
-    font-size:16px;
-    text-align: left;
-    padding-top:2px;
-  }
-
-  .content {
-    clear: both;
-    display: block;
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-}
-
-.box-set {
-  position: relative;
-  height: auto;
-  width:960px;
-  background: transparent;
-}
-
-input[type=text] {
-  text-align: left;
-  width: 95%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-}
-
-input[type=submit] {
-  background-color: #4aaaa5;
-  color: #ffffff;
-  padding: 10px;
-  border: none;
-  box-shadow: none;
-}
-
-form {
-  text-align: left;
-  width:95%;
-  padding:15px;
-}
-
-.textarea {
-  text-align: left;
-  width: 94%;
-  height: 200px;
-}
-
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
