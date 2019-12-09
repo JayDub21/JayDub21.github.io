@@ -1,44 +1,52 @@
 body{
     padding: 0;
-    flex-direction: column;
+    flex-direction: row;
     font-family: Georgia, "Times New Roman", Times, serif;
     width:100%;
     margin:0;
     background-image: url(../images/embossed-diamond.png);
 }
 
-
-.nav{
-    background:#ffffff;
-    box-sizing: border-box;
-    overflow:auto;
-    margin:auto;
+img{
+    padding:10px;
 }
 
-.nav a{
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size:24px;
-    color:#ffffff;
+#selfie{
+    width:50%;
 }
-
-.navitems{}
 
 .navbar-brand{
-    color:#ffffff;
+    
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color:#4aaaa5;
     height:55px;
     font-size:24px; 
     height:55px; 
-    margin:auto; 
+    margin:auto;
+    color:#ffffff !important;
+    float:left; 
+    bottom:0;
+    margin-left:40px;
+    padding:10px;
+}
+
+.navDiv{
+    width:960px;
+    margin:auto;
+}
+
+#navLinks {
+    float: right;
 }
 
 .navbar{
     width:100%;
     text-align:right;
-    margin:0;
     box-sizing: border-box;
+    padding:0px;
+    border-bottom:1px solid #d1d0d0;
 }
+
 
 
 .container {
@@ -52,6 +60,11 @@ body{
     border-radius: 4px
 }
 
+.navwidth{
+    margin:0;
+    width:90%;
+}
+
 
 
 p{
@@ -60,9 +73,6 @@ p{
     padding:10px;
   }
 
-img{
-    padding:10px;
-}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }
