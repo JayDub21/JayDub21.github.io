@@ -7,12 +7,9 @@ body{
     background-image: url(../images/embossed-diamond.png);
 }
 
-img{
-    padding:10px;
-}
-
 #selfie{
-    width:50%;
+    width:100%;
+    padding:10px;
 }
 
 .navbar-brand{
@@ -30,15 +27,6 @@ img{
     padding:10px;
 }
 
-.navDiv{
-    width:960px;
-    margin:auto;
-}
-
-#navLinks {
-    float: right;
-}
-
 .navbar{
     width:100%;
     text-align:right;
@@ -46,8 +34,6 @@ img{
     padding:0px;
     border-bottom:1px solid #d1d0d0;
 }
-
-
 
 .container {
     box-sizing: border-box;
@@ -60,17 +46,15 @@ img{
     border-radius: 4px
 }
 
-.navwidth{
-    margin:0;
-    width:90%;
-}
-
-
-
 p{
     font-size:16px;
     text-align: left;
     padding:10px;
+    
+  }
+
+  #aboutText{
+      padding-top:20px;
   }
 
 
