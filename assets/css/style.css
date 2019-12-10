@@ -12,6 +12,10 @@ body{
     padding:10px;
 }
 
+.profile{
+    padding:10px;
+}
+
 .navbar-brand{
     
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -45,6 +49,18 @@ body{
     border: 1px solid #d1d0d0;
     background-color: #ffffff;
     border-radius: 4px
+}
+.card{
+    margin:10px
+}
+.card-body{
+    background:#4aaaa5;
+}
+
+.card-text{
+    color:#ffffff;
+    font-size: 24px;
+    text-align: center;
 }
 
 p{
