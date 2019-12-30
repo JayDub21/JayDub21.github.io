@@ -68,13 +68,13 @@ body{
 
 }
 .card-body{
-    background:#333d40;
+    background-image: url(../images/green-fibers.png);
     height: auto;
 }
 
 .card-text{
     color:#d1d0d0;
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
     margin-bottom: 10px!important;
 }
