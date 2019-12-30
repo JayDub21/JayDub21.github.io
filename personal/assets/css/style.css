@@ -19,12 +19,12 @@ body{
 .navbar-brand{
     
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color:#4aaaa5;
+    background-image: url(../images/farmer.png);
     height:55px;
     font-size:24px; 
+    color: #1f1f1f;
     height:55px; 
     margin:auto;
-    color:#ffffff !important;
     float:left; 
     bottom:0;
     margin-left:40px;
@@ -36,7 +36,12 @@ body{
     text-align:right;
     box-sizing: border-box;
     padding:0px;
-    border-bottom:1px solid #d1d0d0;
+    background-image: url(../images/farmer.png);
+    border-bottom: 1px groove #d1d0d0;
+}
+
+.nav-link {
+    color: #1f1f1f!important;
 }
 
 .container {
@@ -44,9 +49,10 @@ body{
     overflow:auto;
     margin-top:30px;
     margin-bottom:30px;
+    padding-bottom:20px;
     height: auto;
-    border: 1px solid #d1d0d0;
-    background-color: #ffffff;
+    border: 1px groove #d1d0d0;
+    background-image: url(../images/farmer.png);
     border-radius: 4px
 }
 
@@ -55,10 +61,12 @@ body{
 }
 
 .card{
-    margin:10px
+    margin:10px;
+    border:10px;
+    border: 1px groove #d1d0d0;
 }
 .card-body{
-    background:#4aaaa5;
+    background:#333d40;
 }
 
 .card-text{
@@ -80,15 +88,14 @@ p{
 
   h2{
       padding:20px 20px 0px 20px;
-      color:#4aaaa5
   }
 
   footer {
-    border-top: 8px solid #4aaaa5;
+    border-top: 1px groove #d1d0d0;
     height: 60px;
     width: 100%;
-    color: #ffffff;
-    background-color: #666666;
+    color: #1f1f1f;
+    background-image: url(../images/farmer.png);
     text-align: center;
     position: fixed;
     bottom:0; 
