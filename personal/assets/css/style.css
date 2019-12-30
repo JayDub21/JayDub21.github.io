@@ -62,20 +62,21 @@ body{
 }
 
 .card{
-    margin:10px;
-    border:10px;
+    margin:20px;
     border: 1px groove #d1d0d0;
     display: inline-block;
 
 }
 .card-body{
     background:#333d40;
+    height: auto;
 }
 
 .card-text{
-    color:#ffffff;
+    color:#d1d0d0;
     font-size: 24px;
     text-align: center;
+    margin-bottom: 10px!important;
 }
 
 p{
@@ -100,7 +101,7 @@ p{
     color: #1f1f1f;
     background-image: url(../images/farmer.png);
     text-align: center;
-    position: fixed;
+    /* position: fixed; */
     bottom:0; 
 }
 
