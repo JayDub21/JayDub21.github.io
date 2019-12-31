@@ -39,10 +39,45 @@
     </nav>
 
     <div class="container">
+        <br>
+
+        <form method="post" name="myemailform" action="form-to-email.php">
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    Name:<br> <input type="text" name="name" id="form1"><br><br>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    Email Address:<br> <input type="text" name="email" id="form1">
+                </div>
+            </div>
+
+            <br>
+
+            <div clas="row">
+                Enter Message:<br> <textarea name="message" rows="7" id="messageForm"></textarea>
+            </div>
+
+            <br><br>
+
+            <div class="row">
+
+                <div class="col-xs-5"></div>
+
+                <div class="col-xs-7" id="sendBtn">
+                    <input type="submit" value="Send Form">
+                </div>
+
+            </div>
+
+        </form>
+
+        <br>
 
 
 
-        <form>
+        <!-- <form>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Name:</label>
                 <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
@@ -60,7 +95,7 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"
                     placeholder="Write your message to Justin here!"></textarea>
             </div>
-        </form>
+        </form> -->
 
 
     </div>

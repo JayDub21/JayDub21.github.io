@@ -93,6 +93,19 @@ p{
       padding:20px 20px 0px 20px;
   }
 
+  #form1{
+      width: 75%;
+  }
+
+  #messageForm {
+      width: 90%;
+  }
+
+  #sendBtn {
+      /* text-align: center; */
+      margin-left:9%;
+  }
+
   footer {
     border-top: 1px groove #d1d0d0;
     height: 60px;
