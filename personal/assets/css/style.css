@@ -67,8 +67,9 @@ body{
     display: inline-block;
 }
 .card-body{
-    background-image: url(../images/green-fibers.png);
+    background: #353f41;
     height: auto;
+    opacity: 0.4;
 }
 
 .card-text{
