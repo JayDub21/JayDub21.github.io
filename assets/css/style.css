@@ -1,0 +1,140 @@
+body{
+    padding: 0;
+    flex-direction: row;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    width:100%;
+    margin:0;
+    background-image: url(../images/green-fibers.png);
+}
+
+#selfie{
+    width:100%;
+    padding:10px;
+}
+
+.profile{
+    padding:10px;
+}
+
+.navbar-brand{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: transparent;
+    height:55px;
+    font-size:24px; 
+    color: #1f1f1f;
+    height:55px; 
+    margin:auto;
+    float:left; 
+    bottom:0;
+    margin-left:40px;
+    padding:10px;
+}
+
+.navbar{
+    width:100%;
+    text-align:right;
+    box-sizing: border-box;
+    padding:0px;
+    background-image: url(../images/embossed_paper.png);
+    border-bottom: 1px groove #d1d0d0;
+}
+
+.nav-link {
+    color: #1f1f1f!important;
+}
+
+.container {
+    box-sizing: border-box;
+    overflow:auto;
+    margin-top:30px;
+    margin-bottom:90px;
+    padding-bottom:20px;
+    height: auto;
+    border: 1px groove #d1d0d0;
+    background-image: url(../images/farmer.png);
+    border-radius: 4px;
+    text-align: center;
+}
+
+#navbarMenu{
+    padding-right:5px;
+}
+
+.card{
+    margin:20px;
+    border: 1px groove #d1d0d0;
+    display: inline-block;
+}
+.card-body{
+    background: #353f41;
+    height: auto;
+    opacity: 0.4;
+}
+
+.card-text{
+    color:#d1d0d0;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px!important;
+}
+
+p{
+    font-size:16px;
+    text-align: left;
+    padding:10px;
+    
+  }
+
+  #aboutText{
+      padding-top:20px;
+  }
+
+  h2{
+      padding:20px 20px 0px 20px;
+  }
+
+  #form1{
+      width: 75%;
+  }
+
+  #messageForm {
+      width: 90%;
+  }
+
+  #sendBtn {
+      /* text-align: center; */
+      margin-left:9%;
+  }
+
+  footer {
+    border-top: 1px groove #d1d0d0;
+    height: 55px;
+    width: 100%;
+    color: #1f1f1f;
+    background-image: url(../images/embossed_paper.png);
+    text-align: center;
+    position: fixed;
+    bottom:0; 
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}

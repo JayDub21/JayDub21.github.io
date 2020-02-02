@@ -1,0 +1,28 @@
+{
+  "name": "jaydub21.github.io",
+  "version": "1.0.0",
+  "description": "### [View My Page Here!](https://jaydub21.github.io/)",
+  "main": "index.js",
+  "dependencies": {
+    "intersection-observer": "^0.7.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JayDub21/JayDub21.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JayDub21/JayDub21.github.io/issues"
+  },
+  "homepage": "https://github.com/JayDub21/JayDub21.github.io#readme"
+}
