@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'PT Sans Narrow', 'Yanone Kaffeesatz', 'Barlow Condensed', sans-serif;
+    width:100%;
+  }
+  .site-logo {
+      padding: 10px;
+  }
+  
+  header {
+    --text: black;
+    --text-inverse: #f4f4f4;
+    --background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding: 2em 3em;
+    transition: background 250ms ease-in;
+    background: var(--background);
+    color: var(--text);
+  }
+  
+  nav {
+      margin: 0 auto; 
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+  }
+  .navName {
+    list-style: none;
+    grid-column: 1;
+  }
+
+  .navWD {
+    list-style: none;
+    grid-column: 2;
+  }
+  
+  .navLogo {
+    list-style: none;
+    grid-column: 3;
+  }
+
+  
+  .nav-scrolled {
+    --text: #333;
+    --text-inverse: #f4f4f4;
+    --background: #f4f4f4;
+    text-shadow: 0 0 1px #f4f4f4;  
+    box-shadow: 0 3px 20px rgba(black, 0.2);
+  }
+  
+  .homeIntro {
+    padding: 50vh 0;
+    background-image:url(../img/obsvPt.JPG);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #333;
+    color: white;
+    font-size: 1.75rem;
+    text-shadow: 0 0 5px black;
+    text-align: center;
+  }
+
+  h1 {
+    margin: auto;
+  }
+  h4 {
+      margin: auto;
+  }
+  
+  .homeAbout {
+    padding: 4em 0;
+    margin: 0;
+    display: flex !important;
+  }
+  
+  #selfie {
+    max-width: 45%;
+    margin-left: 10%;
+}
+
+.aboutMe {
+    text-align: center;
+    max-width: 500px;
+    margin-right:18%;
+}
+
+.repoImg {
+    width:100%;
+}
+  
+  .col + .col {
+    margin-left: 1.5em;
+  }
+  
+  .more-stuff-grid {
+    background: #f4f4f4;
+    padding: 4em 0;
+    display: grid;
+    grid-gap: 2em;
+    align-items: center;
+    grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(
+        1em,
+        1fr
+      );
+  }
+  
+  .fade-in.appear {
+    opacity: 1;
+  }
+  
+  .from-left {
+    grid-column: 2 / 3;
+    transform: translateX(-50%);
+  }
+  
+  .from-right {
+    grid-column: 3 / 4;
+    transform: translateX(50%);
+  }
+
+  .from-left.appear,
+.from-right.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+

@@ -1,5 +1,6 @@
 const header = document.querySelector("header");
 const sectionOne = document.querySelector(".nameTag");
+const sectionTwo = document.querySelector(".homeIntro");
 const faders = document.querySelectorAll(".fade-in");
 const sliders = document.querySelectorAll(".slide-in");
 
@@ -10,54 +11,52 @@ const sliders = document.querySelectorAll(".slide-in");
 //         Class Switch - ON 
 //↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
-const sectionOneOptionsOn = {
-    rootMargin: "-135px 0px 0px 0px"
-};
+// const sectionOneOptionsOn = {
+//     rootMargin: "-135px 0px 0px 0px"
+// };
 
-const sectionOneObserverOn = new IntersectionObserver((
-    entries,
-    sectionOneObserverOn
-) => {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            header.classList.add("nav-scrolled");
-        }
-    });
-},
-    sectionOneOptionsOn);
+// const sectionOneObserverOn = new IntersectionObserver((
+//     entries,
+//     sectionOneObserverOn
+// ) => {
+//     entries.forEach(entry => {
+//         if (!entry.isIntersecting) {
+//             header.classList.add("nav-scrolled");
+//         }
+//     });
+// },
+//     sectionOneOptionsOn);
 
-sectionOneObserverOn.observe(sectionOne);
+// sectionOneObserverOn.observe(sectionOne);
 
 //=========================================
 //       navabar + nameTag 
 //          Class Switch - OFF
 //↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
-const sectionOneOptionsOff = {
-    rootMargin: "0px 0px -8px 0px"
-};
+// const sectionOneOptionsOff = {
+//     rootMargin: "0px 0px -8px 0px"
+// };
 
-const sectionOneObserverOff = new IntersectionObserver((
-    entries,
-    sectionOneObserverOff
-) => {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            header.classList.remove("nav-scrolled");
-        }
-    });
-},
-    sectionOneOptionsOff);
+// const sectionOneObserverOff = new IntersectionObserver((
+//     entries,
+//     sectionOneObserverOff
+// ) => {
+//     entries.forEach(entry => {
+//         if (!entry.isIntersecting) {
+//             header.classList.remove("nav-scrolled");
+//         }
+//     });
+// },
+//     sectionOneOptionsOff);
 
-sectionOneObserverOff.observe(sectionOne);
+// sectionOneObserverOff.observe(sectionOne);
 
 
 //=========================================
 //       navabar + homeIntro 
 //          Class Switch  
 //↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
-// Re-use: const header = document.querySelector("header");
-const sectionTwo = document.querySelector(".homeIntro");
 
 const sectionTwoOptions = {
     rootMargin: "-120px 0px 0px 0px"
@@ -81,8 +80,8 @@ sectionTwoObserver.observe(sectionTwo);
 
 
 //=========================================
-//       navabar + homeIntro 
-//          Class Switch  
+//       Appear On Scroll 
+//            Observer  
 //↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
 const appearOptions = {
