@@ -58,25 +58,25 @@ const sliders = document.querySelectorAll(".slide-in");
 //          Class Switch  
 //↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
-const sectionTwoOptions = {
-    rootMargin: "-120px 0px 0px 0px"
-};
+// const sectionTwoOptions = {
+//     rootMargin: "-120px 0px 0px 0px"
+// };
 
-const sectionTwoObserver = new IntersectionObserver((
-    entries,
-    sectionTwoObserver
-) => {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            header.classList.add("nav-scrolled");
-        } else {
-            header.classList.remove("nav-scrolled");
-        }
-    });
-},
-    sectionTwoOptions);
+// const sectionTwoObserver = new IntersectionObserver((
+//     entries,
+//     sectionTwoObserver
+// ) => {
+//     entries.forEach(entry => {
+//         if (!entry.isIntersecting) {
+//             header.classList.add("nav-scrolled");
+//         } else {
+//             header.classList.remove("nav-scrolled");
+//         }
+//     });
+// },
+//     sectionTwoOptions);
 
-sectionTwoObserver.observe(sectionTwo);
+// sectionTwoObserver.observe(sectionTwo);
 
 
 //=========================================
@@ -111,3 +111,25 @@ faders.forEach(fader => {
 sliders.forEach(slider => {
     appearOnScroll.observe(slider);
 });
+
+
+//=========================================
+//            Copy to Clipboard
+//               After Clicked
+//↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+
+// copyEmail = () => {
+//     const copyText = document.getElementById("email");
+//     copyText.select();
+//     copyText.setSelectionRange(0, 99999);
+//     document.execCommand("copy");
+//     alert("Copied: " + copyText.value);
+// };
+
+// copyPhone = () => {
+//     const copyPhone = document.getElementById("phone");
+//     copyText.select();
+//     copText.setSelectionRange(0, 99999);
+//     document.execCommand("copy");
+//     alert("Copied: " + copyPhone.value);
+// };
