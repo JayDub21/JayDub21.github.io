@@ -7,7 +7,6 @@ body {
 .site-logo {
   padding: 10px;
 }
-
 header {
   --text: black;
   --text-inverse: #f4f4f4;
@@ -22,9 +21,8 @@ header {
   background: var(--background);
   color: var(--text);
 }
-
 nav {
-  margin: 0 auto;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
 }
@@ -32,25 +30,21 @@ nav {
   list-style: none;
   grid-column: 1;
 }
-
 .navWD {
   list-style: none;
   grid-column: 2;
 }
-
 .navLogo {
   list-style: none;
   grid-column: 3;
 }
-
 .nav-scrolled {
   --text: #333;
   --text-inverse: #f4f4f4;
   --background: #f4f4f4;
   text-shadow: 0 0 1px #f4f4f4;
-  box-shadow: 0 3px 20px rgba(black, 0.2);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
-
 .homeIntro {
   padding: 50vh 0;
   background-image: url(../img/HITW.JPG);
@@ -64,39 +58,36 @@ nav {
   text-shadow: 0 0 5px black;
   text-align: center;
 }
-
+.projects {
+  overflow-x: hidden;
+}
 h1 {
   margin: auto;
 }
 h4 {
   margin: auto;
 }
-
 .homeAbout {
   padding: 4em 0;
-  margin: 0;
-  display: flex !important;
+  margin: auto;
+  display: flex;
+  align-items: center;
 }
-
 #liSelfie {
-  max-width: 30%;
-  margin-left: 10%;
+  max-width: 35%;
+  margin: auto;
 }
-
 .aboutMe {
   text-align: center;
   max-width: 500px;
-  margin-right: 18%;
+  margin: auto;
 }
-
 .repoImg {
   width: 100%;
 }
-
 .col + .col {
   margin-left: 1.5em;
 }
-
 .more-stuff-grid {
   background: #f4f4f4;
   padding: 4em 0;
@@ -108,33 +99,33 @@ h4 {
       1fr
     );
 }
-
 .fade-in.appear {
   opacity: 1;
 }
-
 .from-left {
   grid-column: 2 / 3;
   transform: translateX(-50%);
 }
-
 .from-right {
   grid-column: 3 / 4;
   transform: translateX(50%);
 }
-
 .from-left.appear,
 .from-right.appear {
   transform: translateX(0);
   opacity: 1;
 }
-
-footer {
-  position: fixed;
-  height: 200px;
-  bottom: 0;
-  width: 100%;
-  background-color: white;
-  color: #333;
-  text-align: center;
+@media only screen and (max-width: 767px) {
+  /* For mobile phones: */
+  .more-stuff-grid {
+    display: flex;
+  }
+  .rowL {
+    flex-direction: column;
+    width: 100%;
+  }
+  .rowR {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
 }

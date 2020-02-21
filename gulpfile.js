@@ -7,13 +7,13 @@ function style() {
   // Find ANH scss file in scss folder
   return (
     gulp
-      .src("./new/scss/**/*.scss")
+      .src("./scss/main.scss")
 
       // Pass that file through sass compiler
       .pipe(sass())
 
       // Where compiled css to be saved
-      .pipe(gulp.dest("../css/main.css"))
+      .pipe(gulp.dest("./css"))
 
       // stream changes to all browser
       .pipe(browserSync.stream())
@@ -26,9 +26,9 @@ function watch() {
       baseDir: "./"
     }
   });
-  gulp.watch("./scss/**/*.scss", style);
+  gulp.watch("./scss/main.scss", style);
   gulp.watch("./*.html").on("change", browserSync.reload);
-  gulp.watch("./js/**/*.js").on("change", browserSync.reload);
+  gulp.watch("./js/oververs.js").on("change", browserSync.reload);
 }
 
 exports.style = style;
