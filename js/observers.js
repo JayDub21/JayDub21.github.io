@@ -7,8 +7,8 @@ const sliders = document.querySelectorAll(".slide-in");
 //↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 //          Query Selectors
 //=========================================
-//         navabar + nameTag 
-//         Class Switch - ON 
+//         navabar + nameTag
+//         Class Switch - ON
 //↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
 // const sectionOneOptionsOn = {
@@ -30,7 +30,7 @@ const sliders = document.querySelectorAll(".slide-in");
 // sectionOneObserverOn.observe(sectionOne);
 
 //=========================================
-//       navabar + nameTag 
+//       navabar + nameTag
 //          Class Switch - OFF
 //↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
@@ -52,10 +52,9 @@ const sliders = document.querySelectorAll(".slide-in");
 
 // sectionOneObserverOff.observe(sectionOne);
 
-
 //=========================================
-//       navabar + homeIntro 
-//          Class Switch  
+//       navabar + homeIntro
+//          Class Switch
 //↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
 // const sectionTwoOptions = {
@@ -78,40 +77,38 @@ const sliders = document.querySelectorAll(".slide-in");
 
 // sectionTwoObserver.observe(sectionTwo);
 
-
 //=========================================
-//       Appear On Scroll 
-//            Observer  
+//       Appear On Scroll
+//            Observer
 //↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
 const appearOptions = {
-    threshold: 0,
-    rootMargin: "0px 0px -250px 0px"
+  threshold: 0,
+  rootMargin: "0px 0px -250px 0px"
 };
 
-const appearOnScroll = new IntersectionObserver(function (
-    entries,
-    appearOnScroll
+const appearOnScroll = new IntersectionObserver(function(
+  entries,
+  appearOnScroll
 ) {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return;
-        } else {
-            entry.target.classList.add("appear");
-            appearOnScroll.unobserve(entry.target);
-        }
-    });
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
 },
-    appearOptions);
+appearOptions);
 
 faders.forEach(fader => {
-    appearOnScroll.observe(fader);
+  appearOnScroll.observe(fader);
 });
 
 sliders.forEach(slider => {
-    appearOnScroll.observe(slider);
+  appearOnScroll.observe(slider);
 });
-
 
 //=========================================
 //            Copy to Clipboard
