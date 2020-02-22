@@ -58,10 +58,20 @@ nav {
   text-align: center; }
 
 .projects {
+  background: #f4f4f4;
   overflow-x: hidden; }
+
+#portTop {
+  margin-top: 12px; }
+
+.portHeader {
+  border: 1px solid black; }
 
 h1 {
   margin: auto; }
+
+h2 {
+  text-align: center; }
 
 h4 {
   margin: auto; }
