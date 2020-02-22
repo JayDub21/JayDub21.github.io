@@ -72,7 +72,7 @@ h4 {
   display: flex;
   align-items: center; }
 
-#liSelfie {
+.liSelfie {
   max-width: 35%;
   margin: auto; }
 
@@ -125,6 +125,14 @@ footer {
 
 @media only screen and (max-width: 812px) {
   /* For mobile phones: */
+  .homeAbout {
+    display: flex;
+    flex-direction: column;
+    margin: 3px; }
+  #liSelfie {
+    max-width: 55%;
+    margin: auto;
+    text-align: center; }
   .more-stuff-grid-norm {
     display: flex;
     flex-direction: column;
