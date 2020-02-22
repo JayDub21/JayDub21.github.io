@@ -129,8 +129,8 @@ footer {
     display: flex;
     flex-direction: column;
     margin: 3px; }
-  #liSelfie {
-    max-width: 55%;
+  .liSelfie {
+    max-width: 75%;
     margin: auto;
     text-align: center; }
   .more-stuff-grid-norm {
