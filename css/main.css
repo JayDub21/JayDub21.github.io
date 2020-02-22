@@ -8,7 +8,7 @@ body {
 
 header {
   --text: black;
-  --text-inverse: #edebe9;
+  --text-inverse: #f6f6f6;
   --background: transparent;
   position: fixed;
   top: 0;
@@ -39,9 +39,9 @@ nav {
 
 .nav-scrolled {
   --text: #333;
-  --text-inverse: #edebe9;
-  --background: #edebe9;
-  text-shadow: 0 0 1px #edebe9;
+  --text-inverse: #f6f6f6;
+  --background: #f6f6f6;
+  text-shadow: 0 0 1px #f6f6f6;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2); }
 
 .homeIntro {
@@ -58,15 +58,14 @@ nav {
   text-align: center; }
 
 .projects {
-  background: #edebe9;
+  background: #f6f6f6;
   overflow-x: hidden; }
 
 #portTop {
   margin-top: 12px; }
 
 .portHeader {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black; }
+  border-top: 1px solid #333; }
 
 h1 {
   margin: auto; }
@@ -84,13 +83,45 @@ h4 {
   align-items: center; }
 
 .liSelfie {
-  max-width: 35%;
+  max-width: 25%;
   margin: auto; }
 
 .aboutMe {
   text-align: center;
   max-width: 500px;
   margin: auto; }
+
+.wrapper {
+  padding-bottom: 90px;
+  background-color: #f6f6f6; }
+
+.divider {
+  position: relative;
+  margin-top: 90px;
+  height: 1px; }
+
+.div-transparent:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, #303133, transparent); }
+
+.div-arrow-down:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -7px;
+  left: calc(50% - 7px);
+  width: 14px;
+  height: 14px;
+  transform: rotate(45deg);
+  background-color: white;
+  border-bottom: 1px solid #303133;
+  border-right: 1px solid #303133; }
 
 .repoImg {
   width: 100%; }
@@ -99,7 +130,7 @@ h4 {
   margin-left: 1.5em; }
 
 .more-stuff-grid-norm {
-  background: #edebe9;
+  background: #f6f6f6;
   padding: 4em 0;
   display: grid;
   grid-gap: 2em;
@@ -107,7 +138,7 @@ h4 {
   grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(1em, 1fr); }
 
 .more-stuff-grid-inv {
-  background: #edebe9;
+  background: #f6f6f6;
   padding: 4em 0;
   display: grid;
   grid-gap: 2em;
@@ -115,7 +146,7 @@ h4 {
   grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(1em, 1fr); }
 
 footer {
-  background: #edebe9;
+  background: #f6f6f6;
   height: 30px; }
 
 .fade-in.appear {
