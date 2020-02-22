@@ -155,7 +155,7 @@ footer {
     display: flex;
     flex-direction: column-reverse;
     margin: 3px;
-    padding: 3px;
+    padding: 8px;
     border: 1.5px solid black; }
   .rowNorm {
     width: 100%; }
