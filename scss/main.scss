@@ -9,7 +9,7 @@ body {
 }
 header {
   --text: black;
-  --text-inverse: #f4f4f4;
+  --text-inverse: #edebe9;
   --background: transparent;
   position: fixed;
   top: 0;
@@ -40,9 +40,9 @@ nav {
 }
 .nav-scrolled {
   --text: #333;
-  --text-inverse: #f4f4f4;
-  --background: #f4f4f4;
-  text-shadow: 0 0 1px #f4f4f4;
+  --text-inverse: #edebe9;
+  --background: #edebe9;
+  text-shadow: 0 0 1px #edebe9;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
 .homeIntro {
@@ -59,7 +59,7 @@ nav {
   text-align: center;
 }
 .projects {
-  background: #f4f4f4;
+  background: #edebe9;
   overflow-x: hidden;
 }
 
@@ -68,7 +68,8 @@ nav {
 }
 
 .portHeader {
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 h1 {
@@ -102,7 +103,7 @@ h4 {
   margin-left: 1.5em;
 }
 .more-stuff-grid-norm {
-  background: #f4f4f4;
+  background: #edebe9;
   padding: 4em 0;
   display: grid;
   grid-gap: 2em;
@@ -114,7 +115,7 @@ h4 {
 }
 
 .more-stuff-grid-inv {
-  background: #f4f4f4;
+  background: #edebe9;
   padding: 4em 0;
   display: grid;
   grid-gap: 2em;
@@ -126,7 +127,7 @@ h4 {
 }
 
 footer {
-  background: #f4f4f4;
+  background: #edebe9;
   height: 30px;
 }
 
