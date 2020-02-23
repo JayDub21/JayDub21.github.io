@@ -192,3 +192,7 @@ footer {
     width: 100%; }
   .rowInv {
     width: 100%; } }
+
+@media (hover: none) {
+  .homeIntro {
+    background-attachment: initial; } }
