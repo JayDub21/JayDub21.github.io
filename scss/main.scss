@@ -235,7 +235,7 @@ footer {
 }
 
 // ios background img fix
-@media (hover: none) {
+@media (pointer: coarse) {
   .homeIntro {
     background-attachment: initial;
   }
