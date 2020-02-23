@@ -233,3 +233,10 @@ footer {
     width: 100%;
   }
 }
+
+// ios background img fix
+@media (hover: none) {
+  .homeIntro {
+    background-attachment: initial;
+  }
+}
