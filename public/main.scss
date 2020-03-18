@@ -25,6 +25,10 @@ nav {
   display: flex;
   align-items: center;
 }
+#text {
+  min-height: 250px;
+  min-width: 500px;
+}
 .nav__link {
   --border: transparent;
   margin: auto;
@@ -36,7 +40,6 @@ nav {
   --background: #333;
   align-items: center;
   text-shadow: 0 0 1px #f6f6f6;
-  //   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
 .button {
   --background: transparent;
@@ -67,11 +70,14 @@ nav {
   overflow: hidden;
 }
 .nameTag {
+  font-size: 5rem;
+}
+.titleTag {
   font-size: 3rem;
 }
 
 .introName {
-  margin: -155px;
+  margin: -225px;
 }
 .contactForm {
   margin: -325px;
@@ -268,7 +274,14 @@ footer {
   .downArrow {
     max-height: 100px;
     max-width: 225px;
-    margin-top: 200px;
+    margin-top: 250px;
+  }
+  .contactForm {
+    margin: -400px;
+  }
+  #text {
+    min-height: 200px;
+    min-width: 400px;
   }
 }
 
