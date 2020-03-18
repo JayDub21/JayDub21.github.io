@@ -2,7 +2,7 @@
   "name": "jaydub21.github.io",
   "version": "1.0.0",
   "description": "### [View My Page Here!](https://jaydub21.github.io/)",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
@@ -25,7 +25,7 @@
     "url": "git+https://github.com/JayDub21/JayDub21.github.io.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Justin Wofford",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JayDub21/JayDub21.github.io/issues"

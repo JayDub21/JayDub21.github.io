@@ -16,13 +16,14 @@ header {
   left: 0;
   right: 0;
   z-index: 999;
-  padding: 2em 3em;
+  padding: 1em 0.25em;
   transition: background 250ms ease-in;
   background: var(--background);
   color: var(--text);
 }
 nav {
   display: flex;
+  align-items: center;
 }
 .nav__link {
   --border: transparent;
@@ -33,6 +34,7 @@ nav {
   --text: #f6f6f6;
   --text-inverse: #f6f6f6;
   --background: #333;
+  align-items: center;
   text-shadow: 0 0 1px #f6f6f6;
   //   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
@@ -40,7 +42,9 @@ nav {
   --background: transparent;
   --color: transparent;
   --border: transparent;
-  padding: 10px 20px;
+  padding: 0px 20px;
+  margin: auto;
+  outline: none;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
@@ -65,16 +69,19 @@ nav {
 .nameTag {
   font-size: 3rem;
 }
+
 .introName {
-  margin: -140px;
+  margin: -155px;
 }
 .contactForm {
-  margin: -350px;
+  margin: -325px;
 }
 
-// .formWidth {
-//   width: 80%;
-// }
+.downArrow {
+  max-height: 200px;
+  max-width: 450px;
+  margin-top: 250px;
+}
 
 #message {
   height: 250px;
@@ -113,7 +120,7 @@ h4 {
 }
 
 .liSelfie {
-  max-width: 25%;
+  max-width: 35%;
   margin: auto;
 }
 
@@ -235,10 +242,6 @@ footer {
     padding: 21%;
   }
 
-  .introName {
-    padding: 15%;
-  }
-
   .more-stuff-grid-norm {
     display: flex;
     flex-direction: column;
@@ -262,11 +265,19 @@ footer {
   .rowInv {
     width: 100%;
   }
+  .downArrow {
+    max-height: 100px;
+    max-width: 225px;
+    margin-top: 200px;
+  }
 }
 
 // ios background img fix
 @media (pointer: coarse) {
   .homeIntro {
     background-attachment: initial;
+  }
+  #sendBtn {
+    background-color: white;
   }
 }

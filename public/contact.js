@@ -1,15 +1,11 @@
 $("form").on("submit", e => {
   e.preventDefault();
 
-  const email = $("#email")
-    .val()
-    .trim();
-  const subject = $("#subject")
-    .val()
-    .trim();
-  const text = $("#text")
-    .val()
-    .trim();
+  const email = $("#email").val();
+
+  const subject = $("#subject").val();
+
+  const text = $("#text").val();
 
   const data = {
     email,

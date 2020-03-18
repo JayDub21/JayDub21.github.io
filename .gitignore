@@ -2,7 +2,7 @@
 node_modules/
 jspm_packages/
 .env
-
+.DS_Store
 # Optional npm cache directory
 .npm
 
