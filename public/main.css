@@ -7,46 +7,52 @@ body {
   padding: 10px; }
 
 header {
-  --text: black;
-  --text-inverse: #f6f6f6;
+  --text: transparent;
+  --text-inverse: transparent;
   --background: transparent;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
-  padding: 2em 3em;
+  padding: 1em 0.25em;
   transition: background 250ms ease-in;
   background: var(--background);
   color: var(--text); }
 
 nav {
+  display: flex;
+  align-items: center; }
+
+.nav__link {
+  --border: transparent;
   margin: auto;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr; }
-
-.navName {
-  list-style: none;
-  grid-column: 1; }
-
-.navWD {
-  list-style: none;
-  grid-column: 2; }
-
-.navLogo {
-  list-style: none;
-  grid-column: 3; }
+  border: var(--border); }
 
 .nav-scrolled {
-  --text: #333;
+  --text: #f6f6f6;
   --text-inverse: #f6f6f6;
-  --background: #f6f6f6;
-  text-shadow: 0 0 1px #f6f6f6;
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2); }
+  --background: #333;
+  align-items: center;
+  text-shadow: 0 0 1px #f6f6f6; }
+
+.button {
+  --background: transparent;
+  --color: transparent;
+  --border: transparent;
+  padding: 0px 20px;
+  margin: auto;
+  outline: none;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  background: var(--background);
+  color: var(--text);
+  border: var(--border); }
 
 .homeIntro {
   padding: 50vh 0;
-  background-image: url(../img/HITW.JPG);
+  background-image: url(./img/HITW.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -55,7 +61,25 @@ nav {
   color: white;
   font-size: 1.75rem;
   text-shadow: 0 0 5px black;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
+
+.nameTag {
+  font-size: 3rem; }
+
+.introName {
+  margin: -155px; }
+
+.contactForm {
+  margin: -325px; }
+
+.downArrow {
+  max-height: 200px;
+  max-width: 450px;
+  margin-top: 250px; }
+
+#message {
+  height: 250px; }
 
 .projects {
   background: #f6f6f6;
@@ -67,14 +91,15 @@ nav {
 .portHeader {
   border-top: 1px solid #333; }
 
-h1 {
-  margin: auto; }
-
 h2 {
   text-align: center; }
 
 h4 {
   margin: auto; }
+
+#aboutScroll {
+  padding-bottom: 80px;
+  bottom: 0; }
 
 .homeAbout {
   padding: 4em 0;
@@ -83,10 +108,10 @@ h4 {
   align-items: center; }
 
 .liSelfie {
-  max-width: 25%;
+  max-width: 35%;
   margin: auto; }
 
-.aboutMe {
+#aboutMe {
   text-align: center;
   max-width: 500px;
   margin: auto; }
@@ -175,6 +200,8 @@ footer {
     max-width: 75%;
     margin: auto;
     text-align: center; }
+  .contactForm {
+    padding: 21%; }
   .more-stuff-grid-norm {
     display: flex;
     flex-direction: column;
@@ -191,8 +218,14 @@ footer {
   .rowNorm {
     width: 100%; }
   .rowInv {
-    width: 100%; } }
+    width: 100%; }
+  .downArrow {
+    max-height: 100px;
+    max-width: 225px;
+    margin-top: 200px; } }
 
 @media (pointer: coarse) {
   .homeIntro {
-    background-attachment: initial; } }
+    background-attachment: initial; }
+  #sendBtn {
+    background-color: white; } }

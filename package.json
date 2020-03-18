@@ -2,9 +2,14 @@
   "name": "jaydub21.github.io",
   "version": "1.0.0",
   "description": "### [View My Page Here!](https://jaydub21.github.io/)",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
-    "intersection-observer": "^0.7.0"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "intersection-observer": "^0.7.0",
+    "nodemailer": "^6.4.4",
+    "nodemailer-mailgun-transport": "^2.0.0",
+    "nodemon": "^2.0.2"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
@@ -12,14 +17,15 @@
     "gulp-sass": "^4.0.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JayDub21/JayDub21.github.io.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Justin Wofford",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JayDub21/JayDub21.github.io/issues"

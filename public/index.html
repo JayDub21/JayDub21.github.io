@@ -9,69 +9,64 @@
     <title>Justin Wofford</title>
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|PT+Sans+Narrow|Yanone+Kaffeesatz&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./scss/main.scss">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="main.scss" />
 </head>
 
 <body>
-    <!-- <header>
+    <header>
         <nav class="main-nav">
-            <ul class="nav__list">
-                <li id="navName">
-                    <a href="#" class="nav__link">About</a>
-                </li>
-                <li id="navWD">
-                    <a href="#" class="nav__link">Portfolio</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="#" class="nav__link">Photography</a>
-                </li>
-                <li class="nav__list-item"><a href="#" class="nav__link">Contact</a></li>
-            </ul>
-        </nav>
-        <nav class="account">
-            <ul class="nav__list">
-                <li class="nav__list-item">
-                    <a class="nav__link nav__link--btn" href="#">Login</a>
-                </li>
-                <li class="nav__list-item">
-                    <a class="nav__link nav__link--btn nav__link--btn--highlight" href="#">Join</a>
-                </li>
-            </ul>
-        </nav>
-    </header> -->
+
+                    <div class="first nav__link"><button class="button" type="button" onclick="topScroll(document.getElementById('topScroll'))">Top</button></div>
+          
+                    <div class="first nav__link"><button class="button" type="button" onclick="aboutScroll(document.getElementById('aboutScroll'))">About</button></div>
+        
+                    <div class="first nav__link"><button class="button" type="button" onclick="portfolioScroll(document.getElementById('portfolioScroll'))">Portfolio</button></div>
+
+                    <a class="first nav__link" href="./contact"><button class="button" type="button">Contact</button></a>
+               
+        </nav>       
+    </header>
 
     <main>
-        <section class="homeIntro">
-            <h1 class="nameTag">Justin Wofford</h1>
-            <h4 class="nameTag">Web Development & Photography</h4>
-            
-
+        <section class="homeIntro" id="topScroll">
+            <div class="introName">
+                <h1 class="nameTag">Justin Wofford</h1>
+                <h4 class="nameTag">Web Development<br/> &<br/> Photography</h4>
+            </div>     
+            <img class="downArrow" src="img/downArrow.png" type="button" onclick="aboutScroll(document.getElementById('aboutScroll'))">
         </section>
+        
+        <div id="aboutScroll"></div>
 
         <div class="homeAbout">
 
-      
-                <img alt="LinkedIn-Picture" class="liSelfie rowNorm" src=".//img/self.jpg">
+                <img alt="LinkedIn-Picture" class="liSelfie rowNorm" src="./img/self.jpg">
            
                 
             
 
-                <div class="aboutMe rowNorm">
-                    <h3>About Me:</h3>
+                <div class="rowNorm" id="aboutMe">
+                    <h2>About Me:</h2>
                     <hr>
+                    <h3>Full Stack Web Developer in Austin, TX. </h3>
                     <p>
-                        Currently studying Web Development at the University of Texas.
-                        With six years of sales and management experience, I have enjoyed a wide array of team dynamics taking on many different challenges over the years. In my free time I enjoy hiking and photographing the Great Outdoors!<br><hr><br>
-                        Email: Justin.Wofford.21@gmail.com<br>
+                        I am a driven and results oriented individual who loves problem-solving and the opportunity to work with teams. <br><br>
+                        Through my former positions in the hospital & health care industry, I have demonstrated skills in customer service, strategic planning, and team management. <br><br>
+                        With six years of sales and management experience, I have enjoyed a wide array of team dynamics taking on many different challenges over the years. <br><br>
+                        In my free time I enjoy hiking and photographing the Great Outdoors!<br><hr><br>
+                        <a href="./contact" class="button">
+                        Email Me!
+                        </a><br /><br />
+                     
                         Phone: (325)&nbsp;665-5622<br><br>
                         <hr>
                         <a target="_blank" href="https://github.com/JayDub21" class="site-logo" aria-label="homepage"><img
-                            src="./img/ghBlack.png" alt="GitHub" height="29" width="29"></a>
+                            src="./img/ghBlack.png" alt="GitHub" height="35" width="35"></a>
                     <a target="_blank" href="https://www.instagram.com/justin_wofford/" class="site-logo"
-                        aria-label="homepage"><img src="./img/insta.png" alt="Instagram" height="29" width="29"></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/justin-wofford-72863361/" class="site-logo"
-                        aria-label="homepage"><img src="./img/linkedIn.png" alt="LinkedIn" height="29" width="29"></a>
+                        aria-label="homepage"><img src="./img/insta.png" alt="Instagram" height="35" width="35"></a>
+                    <a target="_blank" href="www.linkedin.com/in/justinwofford21" class="site-logo"
+                        aria-label="homepage"><img src="./img/linkedIn.png" alt="LinkedIn" height="35" width="35"></a>
                     </p>
                 </div>
             
@@ -81,7 +76,7 @@
 
         <div class="wrapper">
             <!-- <h2>Portfolio</h2> -->
-            <div class="divider div-transparent div-arrow-down">
+            <div class="divider div-transparent div-arrow-down" id="portfolioScroll">
             </div>
         </div>
         
@@ -188,7 +183,7 @@
             <!-- HW 3 -->
             <div class="more-stuff-grid-norm">
                 <div class="slide-in from-left rowNorm">
-                    <a target="_blank" href="https://note-taker-justin-wofford.herokuapp.com/" aria-label="homepage">
+                    <a target="_blank" href="https://note-taker-justin-wofford.herokuapp.com/" aria-label="homepage"></a>
                     <img class="repoImg" src="./img/nt-home.png" alt="Note-Taker"/>
                 </a>
                 <a target="_blank" href="https://note-taker-justin-wofford.herokuapp.com/" aria-label="homepage">
@@ -236,8 +231,8 @@
 
     <footer></footer>
 
-
-    <script src="./js/observers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./observers.js"></script>
 </body>
 
 </html>
