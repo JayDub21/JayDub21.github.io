@@ -208,7 +208,8 @@ footer {
     margin: auto;
     text-align: center; }
   .contactForm {
-    padding: 21%; }
+    padding: 10%;
+    margin: -295px; }
   .more-stuff-grid-norm {
     display: flex;
     flex-direction: column;
@@ -230,11 +231,21 @@ footer {
     max-height: 100px;
     max-width: 225px;
     margin-top: 250px; }
-  .contactForm {
-    margin: -400px; }
+  .nameTag {
+    font-size: 3rem; }
   #text {
     min-height: 200px;
-    min-width: 400px; } }
+    min-width: 350px; } }
+
+@media only screen and (max-width: 321px) {
+  .button {
+    font-size: 12px; }
+  .contactForm {
+    padding: 5%;
+    margin: -250px; }
+  #text {
+    min-height: 200px;
+    min-width: 300px; } }
 
 @media (pointer: coarse) {
   .homeIntro {
