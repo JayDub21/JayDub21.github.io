@@ -85,6 +85,16 @@ nav {
   max-width: 450px;
   margin-top: 250px; }
 
+.emailBtn {
+  text-decoration: none;
+  font-size: 36px;
+  padding: 10px;
+  border: 2px groove #333;
+  border-radius: 5px; }
+  .emailBtn:hover {
+    background-color: #333;
+    color: white; }
+
 #message {
   height: 250px; }
 
@@ -110,12 +120,13 @@ h4 {
 
 .homeAbout {
   padding: 4em 0;
+  padding-bottom: 0;
   margin: auto;
   display: flex;
   align-items: center; }
 
 .liSelfie {
-  max-width: 35%;
+  max-width: 40%;
   margin: auto; }
 
 #aboutMe {
