@@ -69,9 +69,12 @@ nav {
   overflow: hidden; }
 
 .nameTag {
-  font-size: 3rem; }
+  font-size: 5rem; }
 
 .titleTag {
+  font-size: 3rem; }
+
+.contactName {
   font-size: 3rem; }
 
 .introName {
@@ -188,6 +191,15 @@ h4 {
   align-items: center;
   grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(1em, 1fr); }
 
+#confirm {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */ }
+
 footer {
   background: #f6f6f6;
   height: 30px; }
@@ -243,7 +255,13 @@ footer {
     max-width: 225px;
     margin-top: 250px; }
   .nameTag {
-    font-size: 3rem; }
+    font-size: 4rem; }
+  .titleTag {
+    font-size: 2.5rem; }
+  .emailBtn {
+    font-size: 24px; }
+  .contactName {
+    font-size: 2rem; }
   #text {
     min-height: 200px;
     min-width: 350px; } }

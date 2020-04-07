@@ -70,12 +70,14 @@ nav {
   overflow: hidden;
 }
 .nameTag {
-  font-size: 3rem;
+  font-size: 5rem;
 }
 .titleTag {
   font-size: 3rem;
 }
-
+.contactName {
+  font-size: 3rem;
+}
 .introName {
   margin: -225px;
 }
@@ -221,6 +223,14 @@ h4 {
     );
 }
 
+#confirm {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
 footer {
   background: #f6f6f6;
   height: 30px;
@@ -291,9 +301,17 @@ footer {
     margin-top: 250px;
   }
   .nameTag {
-    font-size: 3rem;
+    font-size: 4rem;
   }
-
+  .titleTag {
+    font-size: 2.5rem;
+  }
+  .emailBtn {
+    font-size: 24px;
+  }
+  .contactName {
+    font-size: 2rem;
+  }
   #text {
     min-height: 200px;
     min-width: 350px;

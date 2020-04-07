@@ -15,5 +15,14 @@ $("form").on("submit", e => {
 
   $.post("/contact", data, function() {
     console.log("Data sent to server", data);
-  });
+  }).then(msgRcvd());
 });
+
+function msgRcvd() {
+  var txt;
+  var r = confirm("Message Received!");
+  if (r == true) {
+    location.reload();
+  }
+  document.getElementById("confirm").innerHTML = txt;
+}
