@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "PT Sans Narrow", "Yanone Kaffeesatz", "Barlow Condensed",
+  font-family: 'PT Sans Narrow', 'Yanone Kaffeesatz', 'Barlow Condensed',
     sans-serif;
   width: 100%;
 }
@@ -163,7 +163,7 @@ h4 {
 }
 
 .div-transparent:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 5%;
@@ -179,7 +179,7 @@ h4 {
 }
 
 .div-arrow-down:after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: 1;
   top: -7px;
@@ -276,8 +276,7 @@ footer {
     display: flex;
     flex-direction: column;
     margin: 3px;
-    margin-bottom: 8px;
-    padding: 3px;
+    padding: 8px;
     border: 1.5px solid black;
   }
 
@@ -342,5 +341,11 @@ footer {
   }
   #sendBtn {
     background-color: white;
+  }
+  .more-stuff-grid-norm {
+    margin: 16px 3px;
+  }
+  .more-stuff-grid-inv {
+    margin: 16px 3px;
   }
 }
