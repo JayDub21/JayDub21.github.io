@@ -4,10 +4,9 @@
 
 ### Technologies Used:
 
-- HTML / CSS / SASS
+- HTML / CSS / SASS / Javascript
 
-- JavaScript:
-  - node.js
+- node.js:
   - Express
   - Gulp
   - browserSync
