@@ -7,17 +7,22 @@
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "glob-parent": "^5.1.2",
+    "hosted-git-info": "^2.8.9",
     "intersection-observer": "^0.7.0",
     "netmask": "^2.0.1",
-    "nodemailer": "^6.4.4",
+    "nodemailer": "^6.4.16",
     "nodemailer-mailgun-transport": "^2.0.0",
     "nodemon": "^2.0.2",
+    "trim-newlines": "^3.0.1",
+    "ws": "^7.4.6",
     "y18n": "^5.0.5"
   },
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^4.1.0",
+    "xmlhttprequest-ssl": "^1.6.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
