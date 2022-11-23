@@ -19,7 +19,7 @@
     "y18n": "^5.0.5"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.14",
+    "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0",
     "xmlhttprequest-ssl": "^1.6.2"
