@@ -6,7 +6,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "glob-parent": "^5.1.2",
     "hosted-git-info": "^2.8.9",
     "intersection-observer": "^0.7.0",
